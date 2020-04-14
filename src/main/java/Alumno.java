@@ -14,13 +14,13 @@ public class Alumno {
     }
 
     //Constructor con todos los parámetros
-    public Alumno (Long id, String nombre, String nacionalidad, int edad, String sexo, Set Módulos){
+    public Alumno (Long id, String nombre, String nacionalidad, int edad, String sexo){
         this.id=id;
         this.nombre=nombre;
         this.nacionalidad=nacionalidad;
         this.edad=edad;
         this.sexo=sexo;
-        this.Módulos=Módulos;
+        //this.Módulos=Módulos;
     }
 
     //Getters & setters
