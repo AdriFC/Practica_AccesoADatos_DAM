@@ -1,18 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-mapping PUBLIC
-    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
-    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <!--Mapeo de la clase Alumno con la tabla alumnos-->
 <hibernate-mapping>
-    <class name="Alumno" table="Alumnos" catalog="m06">
-            <id name="id">
-                <column name="idAlumno"/>
-                <generator class="increment"/>
-            </id>
+    <class name="pac.Alumno" table="Alumnos" catalog="m06">
+        <id name="id">
+            <column name="idAlumno"/>
+            <generator class="increment"/>
+        </id>
         <property name="nombre"/>
         <property name="nacionalidad"/>
         <property name="edad" type="integer"/>
         <property name="sexo"/>
         <!-- <property name="Módulos"/>-->
-     </class>
- </hibernate-mapping>
+    </class>
+</hibernate-mapping>

@@ -1,3 +1,5 @@
+package pac;
+
 import java.util.Set;
 
 public class Alumno {
@@ -7,7 +9,7 @@ public class Alumno {
     private String nacionalidad;
     private int edad;
     private String sexo;
-    private Set Módulos;
+    private Set <Modulo> alumno_modulo;
 
     //Constructor vacío
     public Alumno(){
@@ -20,58 +22,45 @@ public class Alumno {
         this.nacionalidad=nacionalidad;
         this.edad=edad;
         this.sexo=sexo;
-        //this.Módulos=Módulos;
     }
 
     //Getters & setters
     public Long getId() {
         return id;
     }
-
     public void setId(Long id) {
         this.id = id;
     }
-
     public String getNombre() {
         return nombre;
     }
-
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
     public String getNacionalidad() {
         return nacionalidad;
     }
-
     public void setNacionalidad(String nacionalidad) {
         this.nacionalidad = nacionalidad;
     }
-
     public int getEdad() {
         return edad;
     }
-
     public void setEdad(int edad) {
         this.edad = edad;
     }
-
     public String getSexo() {
         return sexo;
     }
-
     public void setSexo(String sexo) {
         this.sexo = sexo;
     }
-
     public Set getMódulos() {
-        return Módulos;
+        return alumno_modulo;
     }
-
     public void setMódulos(Set módulos) {
-        Módulos = módulos;
+        módulos = módulos;
     }
-
     //ToString
     @Override
     public String toString() {
@@ -81,7 +70,7 @@ public class Alumno {
                 ", nacionalidad='" + nacionalidad + '\'' +
                 ", edad=" + edad +
                 ", sexo='" + sexo + '\'' +
-                ", Módulos=" + Módulos +
+                ", Módulos=" + alumno_modulo +
                 '}';
     }
 }

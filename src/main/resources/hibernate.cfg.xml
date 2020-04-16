@@ -11,5 +11,9 @@
         <!--Mapeo de los ficheros de configuración para cada una de las clases-->
 
         <mapping resource="Alumno.hbm.xml"/>
+        <mapping resource="Profesor.hbm.xml"/>
+        <mapping resource="Modulo.hbm.xml"/>
+        
+
     </session-factory>
 </hibernate-configuration>
