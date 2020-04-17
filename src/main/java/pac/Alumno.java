@@ -9,19 +9,20 @@ public class Alumno {
     private String nacionalidad;
     private int edad;
     private String sexo;
-    private Set <Modulo> alumno_modulo;
+    private Set <Modulo> modulos;
 
     //Constructor vacío
     public Alumno(){
     }
 
     //Constructor con todos los parámetros
-    public Alumno (Long id, String nombre, String nacionalidad, int edad, String sexo){
+    public Alumno (Long id, String nombre, String nacionalidad, int edad, String sexo, Set <Modulo> modulos){
         this.id=id;
         this.nombre=nombre;
         this.nacionalidad=nacionalidad;
         this.edad=edad;
         this.sexo=sexo;
+        this.modulos.addAll(modulos); //Consultado en stackOverflow
     }
 
     //Getters & setters
@@ -55,12 +56,13 @@ public class Alumno {
     public void setSexo(String sexo) {
         this.sexo = sexo;
     }
-    public Set getMódulos() {
-        return alumno_modulo;
+    public Set<Modulo> getModulos() {
+        return modulos;
     }
-    public void setMódulos(Set módulos) {
-        módulos = módulos;
+    public void setModulos(Set<Modulo> modulos) {
+        this.modulos = modulos;
     }
+
     //ToString
     @Override
     public String toString() {
@@ -70,7 +72,7 @@ public class Alumno {
                 ", nacionalidad='" + nacionalidad + '\'' +
                 ", edad=" + edad +
                 ", sexo='" + sexo + '\'' +
-                ", Módulos=" + alumno_modulo +
+                ", Módulos=" + modulos +
                 '}';
     }
 }

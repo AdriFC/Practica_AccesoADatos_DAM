@@ -6,7 +6,7 @@
 <hibernate-mapping>
     <class name="pac.Modulo" table="modulos" catalog="m06">
         <id name="id">
-            <column name="id"/>
+            <column name="idModulo"/>
             <generator class="increment"/>
         </id>
         <property name="nombre"/>

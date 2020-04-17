@@ -12,6 +12,14 @@
         <property name="nacionalidad"/>
         <property name="edad" type="integer"/>
         <property name="sexo"/>
-        <!-- <property name="Módulos"/>-->
+        <!--Con sultado en https://mkyong.com/hibernate/hibernate-many-to-many-relationship-example/ -->
+        <set name="modulos" table="alumno_modulo">
+            <key>
+                <column name="idAlumno"/>
+            </key>
+            <many-to-many entity-name="pac.Modulo">
+                <column name="idModulo"/>
+            </many-to-many>
+        </set>
     </class>
 </hibernate-mapping>
