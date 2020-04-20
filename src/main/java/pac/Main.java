@@ -29,7 +29,7 @@ public class Main {
         //Creo los abjectos de tipo módulo
 
         Modulo m03b = new Modulo();
-        m03b.setNombre("Programacion A");
+        m03b.setNombre("Programacion B");
         m03b.setCódigo("M03B");
 
         Modulo m06 = new Modulo();
@@ -41,7 +41,7 @@ public class Main {
         m08.setCódigo("M08");
 
         Modulo m09 = new Modulo();
-        m09.setNombre("Serviciones y procesos");
+        m09.setNombre("Servicios y procesos");
         m09.setCódigo("M09");
 
         //Llamada a las funciones para introducir registros en la bbdd
@@ -75,7 +75,7 @@ public class Main {
         setCarla.add(m08);
         setCarla.add(m09);
 
-        //Inserccioçon de alumnos
+        //Insercciones de alumnos
 
         insertAlumno("Juan", "Espaniola", 26,"Hombre", setJuan, session);
         insertAlumno("Pedro", "Andorrana", 21,"Hombre", setPedro, session);
@@ -119,6 +119,6 @@ public class Main {
         session.beginTransaction();
         session.save(a);
         session.getTransaction().commit();
-        System.out.println("Insert into alumno, nombre: " + nombre +  ", nacionalidad: " + nacionalidad + ", edad: " + edad + ", sexo: " + sexo + ", módulos: " + modulos.size());
+        System.out.println("Insert into alumno, nombre: " + nombre +  ", nacionalidad: " + nacionalidad + ", edad: " + edad + ", sexo: " + sexo + ", modulos: " + modulos.size());
     }
 }
