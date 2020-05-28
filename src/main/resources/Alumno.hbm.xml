@@ -3,7 +3,7 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <!--Mapeo de la clase Alumno con la tabla alumnos-->
 <hibernate-mapping>
-    <class name="pac.Alumno" table="Alumnos" catalog="m06">
+    <class name="pac.Alumno" table="alumnos" catalog="m06">
         <id name="id">
             <column name="idAlumno"/>
             <generator class="increment"/>

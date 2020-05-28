@@ -30,19 +30,19 @@ public class Main {
 
         Modulo m03b = new Modulo();
         m03b.setNombre("Programacion B");
-        m03b.setCódigo("M03B");
+        m03b.setCodigo("M03B");
 
         Modulo m06 = new Modulo();
         m06.setNombre("Acceso a Datos");
-        m06.setCódigo("M06");
+        m06.setCodigo("M06");
 
         Modulo m08 = new Modulo();
         m08.setNombre("Desarrollo de aplicaciones moviles");
-        m08.setCódigo("M08");
+        m08.setCodigo("M08");
 
         Modulo m09 = new Modulo();
         m09.setNombre("Servicios y procesos");
-        m09.setCódigo("M09");
+        m09.setCodigo("M09");
 
         //Llamada a las funciones para introducir registros en la bbdd
 
@@ -94,7 +94,7 @@ public class Main {
         session.beginTransaction();
         session.save(m);
         session.getTransaction().commit();
-        System.out.println("Insert into modulo, nombre: " + m.getNombre() + ", codigo: " + m.getCódigo());
+        System.out.println("Insert into modulo, nombre: " + m.getNombre() + ", codigo: " + m.getCodigo());
     }
 
     //Función para introducir un profesores en la tabla módulo de la bbdd

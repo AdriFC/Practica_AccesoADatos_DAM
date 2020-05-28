@@ -4,17 +4,17 @@ public class Modulo {
     //Atributos
     private Long id;
     private String nombre;
-    private String código;
+    private String codigo;
 
     //Constructor vacío
     public Modulo(){
     }
 
     //Constructor con todos los parámetros
-    public Modulo (Long id, String nombre, String código){
+    public Modulo (Long id, String nombre, String codigo){
         this.id=id;
         this.nombre=nombre;
-        this.código=código;
+        this.codigo=codigo;
     }
 
     //Getters & setters
@@ -35,12 +35,12 @@ public class Modulo {
         this.nombre = nombre;
     }
 
-    public String getCódigo() {
-        return código;
+    public String getCodigo() {
+        return codigo;
     }
 
-    public void setCódigo(String código) {
-        this.código = código;
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
     }
 
     //ToString
@@ -49,7 +49,7 @@ public class Modulo {
         return "Modulo{" +
                 "id=" + id +
                 ", nombre='" + nombre + '\'' +
-                ", código='" + código + '\'' +
+                ", código='" + codigo + '\'' +
                 '}';
     }
 }

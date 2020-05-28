@@ -10,6 +10,6 @@
             <generator class="increment"/>
         </id>
         <property name="nombre"/>
-        <property name="código"/>
+        <property name="codigo"/>
     </class>
 </hibernate-mapping>
